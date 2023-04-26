@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="30dp"
+    app:cardBackgroundColor="#DDA38B"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/textForTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/textForTranslation" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="36dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/textTranslation"
+            tools:layout_editor_absoluteX="64dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

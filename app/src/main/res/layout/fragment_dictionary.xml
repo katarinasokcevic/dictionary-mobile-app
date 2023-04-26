@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAEBF3"
+    android:orientation="vertical"
+    tools:context=".DictionaryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lang1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/engg"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/reverse"
+            style="@android:style/ButtonBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_reverse" />
+
+        <TextView
+            android:id="@+id/lang2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/hrvv"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
+
+
+        <Button
+            android:id="@+id/clear"
+            style="@android:style/ButtonBar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_clear" />
+
+        <Button
+            android:id="@+id/translate"
+            style="@android:style/ButtonBar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_check" />
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/translate_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="@string/touch_to_type"
+        android:singleLine="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/translate_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layoutDirection="rtl">
+
+        <Button
+            android:id="@+id/save"
+            style="@android:style/ButtonBar"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:background="@drawable/ic_saved" />
+
+        <Button
+            android:id="@+id/copy"
+            style="@android:style/ButtonBar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_copy" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <!--In the label field of fragment you can give the name that you want to show in the toolbar-->
+    <fragment
+        android:id="@+id/home"
+        android:name="net.katarinavk.croengdict.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_dictionary"
+            app:destination="@id/dictionary" />
+        <action
+            android:id="@+id/action_home_to_saved"
+            app:destination="@id/saved" />
+        <action
+            android:id="@+id/action_home_to_history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_home_to_quiz"
+            app:destination="@id/quiz" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dictionary"
+        android:name="net.katarinavk.croengdict.DictionaryFragment"
+        android:label="Dictionary"
+        tools:layout="@layout/fragment_dictionary" />
+
+    <fragment
+        android:id="@+id/quiz"
+        android:name="net.katarinavk.croengdict.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz">
+    </fragment>
+
+    <activity
+        android:id="@+id/saved"
+        android:name="net.katarinavk.croengdict.SavedActivity"
+        android:label="Saved"
+        tools:layout="@layout/activity_saved" />
+
+    <activity
+        android:id="@+id/history"
+        android:name="net.katarinavk.croengdict.HistoryActivity"
+        android:label="Saved"
+        tools:layout="@layout/activity_history" />
+
+</navigation>
